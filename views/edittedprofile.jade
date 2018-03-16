@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  
+    #display
+        div
+             p 'Welcome' #{username}
+        #updates        
+            form(method='POST', action='/Updated')
+                | Update Details
+                div
+                    input(type='text', name='username',value='#{username}')
+                div 
+                    input(type='email', name='email',value = '#{email}') 
+                div    
+                    input(type='date',name='bday' ,value = '#{bday}')
+                div   
+                    input(type='submit', value='Update')
+                                        

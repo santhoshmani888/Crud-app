@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  
+    #display
+        #login        
+            form(method='post' action='/submit')
+                | Enter your name
+                div
+                    input(type='text', name='username',placeholder='username',required=true)
+                    input(type='submit', value='Log In')
+                    
+                    div  
+                        a(href="register") new user signup!
+
+       

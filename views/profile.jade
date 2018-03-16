@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  
+    #display
+                div
+                    p 'Welcome' #{username} 
+                    p  Emailid: #{email}
+                    p  Date of Birth: #{bday}
+                    div
+                    
+                    a(href='/EditProfile') Edit Profile
+                    div
+                    a(href='/CreatePost') Create Post
+                    div
+                    a(href='/ViewPost') View Post
+
+       

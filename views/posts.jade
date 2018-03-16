@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    #display 
+      -for (var i in posts)
+        -var post = posts[i]
+        div
+          a(href='/post/#{post._id}') #{post.username} - #{post.messages}
+        
+    

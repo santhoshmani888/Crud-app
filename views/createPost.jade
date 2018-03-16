@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  
+    #display
+        #updates        
+            form(method='POST', action='/Created')
+                | New Post
+                div
+                    | Description
+                div
+                   textarea( name="messages", rows="6", cols="66", placeholder = "How you doing ?" )
+                div
+                    | Do you want all users ?
+                div
+                input(type="radio", name="visibility",value="all", checked="")
+                |yes
+                div
+                input(type="radio",name="visibility",value="me")
+                |no
+                div   
+                    input(type='submit', value='Post it!')
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

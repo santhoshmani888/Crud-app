@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    #display
+      
+      h1  #{username} has posted this content. 
+      p  This was the posted message : 
+      p  #{postContent}
+      
+      div
+      if deleteStatus  
+          a(href='/delete/#{id}') Delete 

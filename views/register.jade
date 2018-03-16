@@ -1,0 +1,20 @@
+                    
+extends layout
+
+block content
+  
+    #display
+        #register        
+            form(method='POST', action='/register')
+                | Enter your details
+                div
+                    input(type='text', name='username',placeholder='username')
+                div 
+                    input(type='email', name='email',placeholder='email address') 
+                div    
+                    input(type='date', name='bday')
+                div   
+                    input(type='submit', value='Sign up')
+                    
+
+       
